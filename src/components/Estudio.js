@@ -4,7 +4,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import icono from '../assets/icono_3_puntos.svg'
+import icono from '../../public/assets/icono_3_puntos.svg'
 
 export const Estudio = (props) => {
     const {
@@ -16,14 +16,14 @@ export const Estudio = (props) => {
     console.log(props)
 
     return (
-        <div class="container">
-            <div>
+        <div className="container">
+            <div key={Nombre+ 1}>
                 {Nombre}
             </div>
-            <div>
+            <div key={Nombre+ 12}>
                 {Duracion}
             </div>
-            <div>
+            <div key={Nombre+ 13}>
                 {Escuela}
             </div>
             <a href={Redirect}>

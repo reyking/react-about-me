@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Estudio } from './components/Estudio';
 import { EstudiosContainer } from './containers/EstudiosContainer';
-import "../styles.css"
+import "../public/styles.css"
+import MenuContainer from './containers/MenuContainer';
 
 const defaultdata = [{
     Nombre: "Ingenieria Civil Industrial",
@@ -10,15 +11,14 @@ const defaultdata = [{
     Redirect: "url",
 }];
 
-class App extends Component {
-
-    render() {
-        return (
-            <div>
-                <EstudiosContainer estudios={defaultdata}/>
-            </div>
-        )
-    }
+export const App = () => {
+    return (
+    <div>
+        <MenuContainer />
+        <EstudiosContainer estudios={defaultdata} />
+    </div>
+    )
 }
+
 
 export default App;

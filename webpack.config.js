@@ -45,6 +45,6 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [new HTMLWebpackPlugin({
-        template: './src/index.html'
+        template: './public/index.html'
     })],
 };
